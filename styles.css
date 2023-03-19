@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+:root {
+    --bold-font-weight: 700;
+    --medium-font-weight: 400;
+    --small-font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', serif;
+}
