@@ -9,6 +9,10 @@ a {
     color: inherit;
 }
 
+li {
+    list-style: none;
+}
+
 body {
     font-family: 'Lato', sans-serif;
 }
@@ -22,3 +26,47 @@ body {
 h1, h2, h3 {
     font-family: 'Roboto', serif;
 }
+
+/* HEADER */
+.banner {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 0.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+}
+/* MOBILE NAV */
+.mobile-nav {
+    background: black;
+    color: white;
+    height: 100vh;
+    padding: 2em;
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+}
+
+.mobile-nav .active {
+    left: -1000px;
+}
+
+.mobile-links {
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-xmark {
+    font-size: 3rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1em;
+}
+
