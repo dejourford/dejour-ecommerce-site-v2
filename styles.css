@@ -47,10 +47,17 @@ h1, h2, h3 {
     justify-content: center;
     position: absolute;
     width: 100%;
+    
 }
 
-.mobile-nav .active {
+.close {
     left: -1000px;
+    transition: 0.8s;
+}
+
+.open {
+    left: 0;
+    transition: 0.6s;
 }
 
 .mobile-links {
@@ -68,5 +75,9 @@ h1, h2, h3 {
     top: 0;
     right: 0;
     padding: 1em;
+}
+
+.fa-bars-staggered {
+    font-size: 2rem;
 }
 
