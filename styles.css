@@ -108,7 +108,7 @@ h1, h2, h3 {
 }
 
 .site-links a:hover {
-    text-decoration: 4px #FFBB55 overline;
+    text-decoration: 4px #42A0C7 overline;
 }
 
 .site-nav-right {
@@ -152,8 +152,8 @@ h1, h2, h3 {
     bottom: 0;
     right: 0px;
     top: 500px;
-    color: ;
-    background: #FFBB55;
+    color: white ;
+    background: black;
     height: 50px;
     width: 400px;
     margin: 0 auto;
@@ -169,7 +169,7 @@ h1, h2, h3 {
 
 .shop-btn:hover {
     color: white;
-    background: black;
+    background: #42A0C7;
 }
 
 .hero-grid-item-1::after:hover {
@@ -184,7 +184,7 @@ h1, h2, h3 {
     display: flex;
     flex-direction: column;
     gap: 6em;
-    background: #FFBB55;
+    background: #42A0C7;
     padding: 2em 2.5em;
     border-radius: 1em;
 }
