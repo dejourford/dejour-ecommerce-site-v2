@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>De'Jour</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/46b2ce83c1.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="content">
         <header>
-    
+            
             <nav class="mobile-nav">
                 <ul class="mobile-links">
                     <li><a href="#">Home</a></li>
@@ -24,9 +24,9 @@
                 </ul>
                 <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
             </nav>
-
+            <p class="banner"> <strong>Hurry!</strong> *free shipping on all orders over $50*</p>
             <nav class="site-nav">
-                <p class="banner"> <strong>Hurry!</strong> *free shipping on all orders over $50*</p>
+                
                 <div class="site-nav-left">
                     <span>De'Jour</span>
                 </div>
@@ -45,6 +45,41 @@
                 <i class="fa-solid fa-bars-staggered" onclick="openMenu()"></i>
             </nav>
         </header>
+
+        <main>
+            <article class="hero">
+                <div class="hero-grid-item-1">
+                    <img id="hero-img" src="images/hero-image.jpeg" alt="">
+                    <button class="shop-btn">Shop Now</button>
+                </div>
+                
+                <div class="hero-grid-item-2">
+                    <div class="hero-text-wrapper">
+
+                    
+                        <h1><span class="emphasis">real</span> fashion <br> by <span class="emphasis">real</span> people <br>
+                            for <span class="emphasis">real</span> people
+                        </h1>
+                        <p class="hero-text">We have the luxury items everyone is looking for. 
+                            It doesn't matter what season it is! These 
+                            items can be rocked anywhere the sun does 
+                            or doesn't shine.
+                        </p>
+                    </div>
+                </div>
+               
+                <div class="hero-grid-item-3">
+                    <img id="hero-feature" src="images/feature-kid.jpeg" alt="">
+                </div>    
+                    
+                <div class="hero-grid-item-4">
+                    <img id="hero-feature-2" src="images/hero-shoes-on-feet.jpeg" alt="">
+                </div> 
+                    
+                    
+            
+            </article>
+        </main>
     </div>
 <script src="main.js"></script>
 </body>
