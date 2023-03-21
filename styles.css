@@ -265,6 +265,7 @@ h2 {
     font-size: 2rem;
     font-weight: var(--bold-font-weight);
     text-align: center;
+    z-index: 999;
 }
 
 .card {
@@ -274,23 +275,30 @@ h2 {
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
-    
 }
 
-.card:hover .view-details {
+.view-details {
+    display: none;
+
+}
+
+.card:hover .view-details{
     filter: blur(3px);
-    display: block;
     background: red;
+    display: contents;
 }
 
 .card-body {
     padding: 4em 3em;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
 }
 
 .card-footer {
     background: #FBEBD2;
     width: 100%;
-    height: 100%;
     padding: 2em;
 }
 
