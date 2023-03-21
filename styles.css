@@ -258,7 +258,9 @@ h2 {
 }
 
 .card-body img {
+    min-height: 100px;
     width: 100%;
+    object-fit: cover;
 }
 
 .view-details {
@@ -279,21 +281,27 @@ h2 {
 
 .view-details {
     display: none;
+   
 
 }
+
+
 
 .card:hover .view-details{
-    filter: blur(3px);
-    background: red;
     display: contents;
+    opacity: 100%;
+    z-index: 9999;
 }
+
+
 
 .card-body {
     padding: 4em 3em;
     height: 300px;
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    justify-content: center;
+   
 }
 
 .card-footer {
@@ -302,14 +310,20 @@ h2 {
     padding: 2em;
 }
 
-.item-name, .item-price {
+.item-name {
     font-size: 1.5rem;
     font-weight: var(--bold-font-weight);
+}
+
+.item-price {
+    font-size: 1.5rem;
+    font-weight: var(--small-font-weight);
 }
 
 .offset-card {
     grid-column: 2 / 3;
 }
+
 
 
 
