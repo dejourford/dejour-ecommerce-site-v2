@@ -93,7 +93,7 @@ h1, h2, h3 {
     padding: 2em 4em;
 }
 
-.site-nav-left {
+.logo {
     font-size: 2rem;
     font-weight: var(--bold-font-weight);
     cursor: pointer;
@@ -436,37 +436,99 @@ h3 {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* FEATURES SECTION */
-/* .features {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-    padding: 2em;
+/* SHOP NOW SECTION */
+.shop-now {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding-bottom: 10em;
 }
 
-.features img {
+.shop-now img {
+    width: 90%;
+    object-fit: cover;
+    border-radius: 2em;
+}
+
+/* FOOTER SECTION */
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 6em 2em;
+    background: black;
+    color: white;
+}
+
+.logo-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo-text {
+    text-transform: uppercase;
+}
+
+.link-header {
+    text-transform: uppercase;
+    font-weight: var(--bold-font-weight);
+    font-size: 1.2rem;
+}
+
+.link-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    font-weight: var(--small-font-weight);
+    opacity: 90%;
+}
+
+.links li:hover {
+    text-decoration: 3px #42A0C7 underline;
+}
+
+.email-input {
+    /* padding: 1em;
+    border-radius: 2em; */
     width: 100%;
-    object-fit: cover
+    border: none;
+    outline: none;
 }
 
-.features-left {
-    grid-column: ;
-} */
+.input-field {
+    display: flex;
+    width: 300px;
+    border-radius: 2em;
+    padding: 0.3em 0.2em;
+    padding-left: 1em;
+    border-radius: 2em;
+    background: white;
+    align-items: center;
+    font-size: 16px;
+}
+
+.fa-paper-plane {
+    color: black;
+    font-size: 1.3rem;
+    cursor: pointer;
+    background: #42A0C7 ;
+    border-radius: 1em;
+    padding: 0.5em;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -516,17 +578,6 @@ h3 {
     
 }
 
-@media screen and (max-width:1047px) {
-   
-
-   
-}
-
-@media screen and (max-width:999px) {
-   
-
-    
-}
 
 @media screen and (max-width:955px) {
    h1 {
@@ -737,3 +788,42 @@ h3 {
 
    
 }
+
+@media screen and (max-width: 1165px) {
+   
+   footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+   }
+
+   #social {
+    grid-column:2 / 3;
+   }
+}
+
+@media screen and (max-width: 887px) {
+   
+    footer {
+     display: flex;
+     flex-direction: column;
+     gap: 2em;
+    }
+
+    footer section {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .link-group {
+        text-align: center;
+    }
+
+    .logo-text {
+        text-align: center;
+    }
+ 
+   
+ }
