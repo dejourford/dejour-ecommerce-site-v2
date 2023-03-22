@@ -241,10 +241,13 @@ h1 {
 /* ITEMS SECTION */
 .items {
     padding: 2em 10em;
+    padding-bottom: 4em;
     display: grid;
+    justify-items: center;
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 4em;
-    column-gap: 4em;
+    column-gap: 1em;
+    
 }
 
 h2 {
@@ -324,7 +327,45 @@ h2 {
     grid-column: 2 / 3;
 }
 
+/* FEATURES SECTION */
+.features {
+    display: flex;
+    padding: 6em;
+    gap: 4em;
+    background: #42A0C7;
+    align-items: flex-start;
+}
 
+.feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    /* width: 100%; */
+    
+    
+
+}
+
+.fa-recycle, .fa-sack-dollar, .fa-truck-fast {
+    font-size: 6rem; 
+    color: black; 
+    background: white;
+    box-shadow: 0px 20px 40px rgb(0, 0, 0, 0.4); 
+    padding: 0.2em 0em;
+    border-radius: 2em 4em 2em 2em;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.feature-text {
+    font-size: 1.3rem;
+    font-weight: var(--bold-font-weight);
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+}
 
 
 
@@ -526,3 +567,43 @@ h2 {
     }
 }
 
+@media screen and (max-width:1165px) {
+    .items {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    h2 {
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (max-width:956px) {
+    .items {
+        grid-template-columns: 1fr 1fr;
+        padding: 2em 2em;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width:811px) {
+   
+
+    h2 {
+        font-size: 3rem;
+        padding: 2em 0em;
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:667px) {
+   
+    .items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
