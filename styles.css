@@ -329,11 +329,13 @@ h2 {
 
 /* FEATURES SECTION */
 .features {
+    height: 100%;
     display: flex;
-    padding: 6em;
+    align-items: center;
+    padding: 4em;
     gap: 4em;
     background: #42A0C7;
-    align-items: flex-start;
+    
 }
 
 .feature {
@@ -349,13 +351,13 @@ h2 {
 }
 
 .fa-recycle, .fa-sack-dollar, .fa-truck-fast {
-    font-size: 6rem; 
+    font-size: 4rem; 
     color: black; 
     background: white;
     box-shadow: 0px 20px 40px rgb(0, 0, 0, 0.4); 
     padding: 0.2em 0em;
     border-radius: 2em 4em 2em 2em;
-    width: 50%;
+    width: 40%;
     margin: 0 auto;
 }
 
@@ -365,6 +367,7 @@ h2 {
     text-transform: uppercase;
     text-align: center;
     color: white;
+   
 }
 
 
@@ -606,4 +609,24 @@ h2 {
         flex-direction: column;
         align-items: center;
     }
+}
+
+@media screen and (max-width:1126px) {
+   
+    .features {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:667px) {
+   
+    .features {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+   
 }
