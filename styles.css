@@ -131,7 +131,7 @@ h1, h2, h3 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1em;
     padding: 0em 5em;
-    padding-bottom: 4em;
+    padding-bottom: 8em;
 }
 
 .hero-grid-item-1 {
@@ -148,13 +148,10 @@ h1, h2, h3 {
 .shop-btn{
     font-size: 2.5rem;
     font-weight: var(--bold-font-weight);
-    position: absolute;
-    left: 170px;
-    bottom: -102px;
     color: white;
     background: black;
     height: 50px;
-    width: 394px;
+    width: 100%;
     cursor: pointer;
     text-transform: uppercase;
     text-align: center;
@@ -163,6 +160,8 @@ h1, h2, h3 {
     border-radius: 0.2em;
     border: 3px solid white;
 
+    
+    
 }
 
 .shop-btn:hover {
@@ -487,9 +486,7 @@ h3 {
         display: block;
     }
 
-    .shop-btn {
-        width: 95vw;
-    }
+   
 
 
 }
@@ -499,9 +496,7 @@ h3 {
         font-size: 3rem;
     }
 
-    .shop-btn {
-        width: 325px;
-    }
+   
 }
 
 @media screen and (max-width:1144px) {
@@ -509,9 +504,7 @@ h3 {
         font-size: 2.7rem;
     }
 
-    .shop-btn {
-        width: 300px;
-    }
+    
 }
 
 @media screen and (max-width:1062px) {
@@ -519,29 +512,19 @@ h3 {
         font-size: 2.3rem;
     }
 
-    .shop-btn {
-        width: 250px;
-        bottom: -50px;
-        left: 190px;
-    }
+    
 }
 
 @media screen and (max-width:1047px) {
    
 
-    .shop-btn {
-        bottom: -50px;
-        left: 190px;
-    }
+   
 }
 
 @media screen and (max-width:999px) {
    
 
-    .shop-btn {
-        
-        left: 160px;
-    }
+    
 }
 
 @media screen and (max-width:955px) {
@@ -627,10 +610,7 @@ h3 {
         display: none;
     }
 
-    .shop-btn {
-        width: 100%;
-        margin: 0 auto;
-    }
+    
 }
 
 @media screen and (max-width:1165px) {
