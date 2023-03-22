@@ -332,9 +332,9 @@ h2 {
     height: 100%;
     display: flex;
     align-items: center;
-    padding: 4em;
+    padding: 8em 4em;
     gap: 4em;
-    background: #42A0C7;
+    /* background: #42A0C7; */
     
 }
 
@@ -352,12 +352,13 @@ h2 {
 
 .fa-recycle, .fa-sack-dollar, .fa-truck-fast {
     font-size: 4rem; 
-    color: black; 
-    background: white;
+    color: white; 
+    background: #42A0C7;
     box-shadow: 0px 20px 40px rgb(0, 0, 0, 0.4); 
     padding: 0.2em 0em;
     border-radius: 2em 4em 2em 2em;
     width: 40%;
+    height: 75px;
     margin: 0 auto;
 }
 
@@ -366,11 +367,73 @@ h2 {
     font-weight: var(--bold-font-weight);
     text-transform: uppercase;
     text-align: center;
-    color: white;
+    /* color: white; */
    
 }
 
 
+/* BARRIERS SECTION */
+.break-barriers {
+    display: flex;
+    justify-content: space-around;
+    padding: 4em;
+    gap: 1em;
+}
+
+.barriers-left {
+    background: #42A0C7 ;
+    width: 60%;
+    padding: 2em;
+}
+
+.barriers-text {
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: var(--bold-font-weight);
+}
+
+.barriers-right img {
+    width: 450px;
+    height: 550px;
+    border-radius: 3em;
+    object-fit: cover;
+}
+
+.barriers-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 3em;
+}
+
+.barriers-left-bottom {
+    display: flex;
+}
+
+.barriers-bottom-header {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.barriers-bottom-left , .barriers-bottom-right {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    
+}
+
+.fa-globe, .fa-handshake {
+    font-size: 2.5rem;
+    color: white;
+    
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: var(--bold-font-weight);
+   
+}
 
 
 
@@ -626,6 +689,69 @@ h2 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+   
+}
+
+@media screen and (max-width:1265px) {
+   
+    .break-barriers {
+        flex-direction: column;
+        align-items: center;
+    
+    }
+
+    .barriers-left {
+        width: 100%;
+    }
+
+    .barriers-left-bottom {
+        gap: 10em;
+        padding: 2em;
+    }
+
+    .barriers-text {
+        text-align: center;
+    }
+
+    .barriers-right img {
+        width: 90vw;
+    }
+   
+}
+
+@media screen and (max-width:781px) {
+   
+   .barriers-left-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 4em 0em;
+   }
+
+   .barriers-bottom-header {
+    margin: 0 auto;
+   }
+
+   .bottom-text {
+        font-size: 1.5rem;
+   }
+   
+}
+
+@media screen and (max-width:487px) {
+   
+    .break-barriers {
+        padding: 2em;
+    }
+
+    .barriers-text {
+        font-size: 3rem;
+    }
+
+    .bottom-text {
+        font-size: 1.3rem;
     }
 
    
