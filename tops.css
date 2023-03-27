@@ -91,6 +91,7 @@ h1, h2, h3 {
     justify-content: space-between;
     align-items: center;
     padding: 2em 4em;
+    
 }
 
 .logo {
@@ -116,4 +117,37 @@ h1, h2, h3 {
     font-size: 1.3rem;
     gap: 2em;
     cursor: pointer;
+}
+
+/* HERO SECTION */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width:1100px) {
+    .site-links, .site-nav-right {
+        display: none;
+    }
+    .fa-bars-staggered {
+        display: block;
+    }
+
+   
+
+
 }
