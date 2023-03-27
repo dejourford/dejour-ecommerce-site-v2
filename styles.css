@@ -444,11 +444,19 @@ h3 {
     padding-bottom: 10em;
 }
 
+h4 {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+
 .shop-now img {
     width: 90%;
     object-fit: cover;
     border-radius: 2em;
 }
+
+
 
 /* FOOTER SECTION */
 footer {
