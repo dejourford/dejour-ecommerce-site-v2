@@ -60,13 +60,13 @@ const products = [
     },
 
     {
-        title: 'Women\'s Kentucky Crewneck',
+        title: 'Kentucky Crewneck',
         price: '$49.99',
         img: 'images/Womens-Kentucky-Crewneck.png'
     },
 
     {
-        title: 'Women\'s Louis Vuitton T-Shirt',
+        title: 'Louis Vuitton T-Shirt',
         price: '$149.99',
         img: 'images/Womens-LousVuitton-Shirt.png'
     },
@@ -128,7 +128,7 @@ for (let i = 0; i < products.length; i++) {
     // create the add to cart button
     const addToCartBtn = document.createElement('button')
     addToCartBtn.classList.add('add-to-cart-btn')
-    addToCartBtn.textContent = 'add to cart'
+    addToCartBtn.textContent = 'Add To Cart'
 
     // append all elements to card 
     // and card to DOM

@@ -307,7 +307,8 @@ h2 {
 }
 
 .card-footer {
-    background: #FBEBD2;
+    background: black;
+    color: white;
     width: 100%;
     padding: 2em;
 }
