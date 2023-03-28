@@ -19,65 +19,76 @@ openMenu = () => {
 // PRODUCTS 
 const products = [ 
     {
+        category: 'Tops',
         title: 'Drake Crewneck',
         price: '$49.99',
         img: 'images/Drake-Crewneck.png'
     },
     {
+        category: 'Tops',
         title: 'Gucci T-Shirt',
         price: '$149.99',
         img: 'images/Gucci-TShirt.png'
     },
 
     {
+        category: 'Tops',
         title: 'Kobe Bryant Jersey',
         price: '$299.99',
         img: 'images/Kobe-Bryant-Jersey.png'
     },
 
     {
+        category: 'Tops',
         title: 'Michael Jordan Jersey',
         price: '$299.99',
         img: 'images/Michael-Jordan-Jersey.png'
     },
 
     {
+        category: 'Tops',
         title: 'Nike Crewneck',
         price: '$29.99',
         img: 'images/Nike-Crewneck.png'
     },
 
     {
+        category: 'Tops',
         title: 'OVO Hoodie',
         price: '$129.99',
         img: 'images/OVO-Hoodie.png'
     },
 
     {
+        category: 'Tops',
         title: 'Supreme T-Shirt',
         price: '$99.99',
         img: 'images/Supreme-TShirt.png'
     },
 
     {
+        category: 'Tops',
         title: 'Kentucky Crewneck',
         price: '$49.99',
         img: 'images/Womens-Kentucky-Crewneck.png'
     },
 
     {
+        category: 'Tops',
         title: 'Louis Vuitton T-Shirt',
         price: '$149.99',
         img: 'images/Womens-LousVuitton-Shirt.png'
     },
 
     {
+        category: 'Tops',
         title: 'Women\'s OVO T-Shirt',
         price: '$59.99',
         img: 'images/Womens-OVO-Shirt.png'
     },
 
     {
+        category: 'Tops',
         title: 'Yeezus T-Shirt',
         price: '$79.99',
         img: 'images/Yeezus-Shirt.png'
@@ -97,7 +108,10 @@ console.log(products.length)
 
 for (let i = 0; i < products.length; i++) {
     console.log(products[i])
-
+    if (products[i].price == '$49.99') {
+        console.log('true')
+        
+    }
     // create a new card each time
     const newCard = document.createElement('div')
     newCard.classList.add('card')
