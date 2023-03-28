@@ -183,11 +183,8 @@ console.log(products.length)
 
 for (let i = 0; i < products.length; i++) {
     console.log(products[i])
-    if (products[i].price == '$49.99') {
-        console.log('true')
-        
-    }
-    // create a new card each time
+    if (products[i].category == 'Tops') {
+        // create a new card each time
     const newCard = document.createElement('div')
     newCard.classList.add('card')
     
@@ -234,6 +231,8 @@ for (let i = 0; i < products.length; i++) {
     newCardBody.append(cardImg)
     newCardFooter.append(cardTitle, cardPrice, addToCartBtn)
     tops.append(newCard)
-    
+        
+    }
+   
     
 }
