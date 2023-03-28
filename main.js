@@ -113,11 +113,14 @@ for (let i = 0; i < products.length; i++) {
     const cardPrice = document.createElement('span')
     cardPrice.classList.add('price')
     cardPrice.textContent = products[i].price
+    const addToCartBtn = document.createElement('button')
+    addToCartBtn.classList.add('add-to-cart-btn')
+    addToCartBtn.textContent = 'add to cart'
 
     newCard.appendChild(newCardBody)
     newCard.appendChild(newCardFooter)
     newCardBody.append(cardImg)
-    newCardFooter.append(cardTitle, cardPrice)
+    newCardFooter.append(cardTitle, cardPrice, addToCartBtn)
     tops.append(newCard)
     
     
