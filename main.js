@@ -22,7 +22,8 @@ const products = [
         category: 'Tops',
         title: 'Drake Crewneck',
         price: '$49.99',
-        img: 'images/Drake-Crewneck.png'
+        img: 'images/Drake-Crewneck.png',
+        link: 'index.html'
     },
     {
         category: 'Tops',
@@ -124,6 +125,14 @@ for (let i = 0; i < products.length; i++) {
     const cardImg = document.createElement('img')
     cardImg.classList.add('img')
     cardImg.src = products[i].img
+    
+    //create anchor tags for each image 
+    var link = document.getElementById("link");
+    var aTag = document.createElement('a');
+    aTag.setAttribute('href',`${products[i].link}`);
+    aTag.setAttribute('id','link');
+    aTag.textContent = "View Item";
+    newCardBody.append(aTag);
     
     // create the card footer div
     const newCardFooter = document.createElement('div')
