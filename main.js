@@ -108,7 +108,7 @@ const products = [
     {
         category: 'Shoes',
         title: 'Jordan 11',
-        price: '$79.99',
+        price: '$219.99',
         img: 'images/Jordan-11.png',
         link: 'index.html'
     },
@@ -116,7 +116,7 @@ const products = [
     {
         category: 'Shoes',
         title: 'Kobe Mamba',
-        price: '$49.99',
+        price: '$129.99',
         img: 'images/Kobe-Black-Mamba.png',
         link: 'index.html'
     },
@@ -124,7 +124,7 @@ const products = [
     {
         category: 'Shoes',
         title: 'Nike Air Force 1',
-        price: '$39.99',
+        price: '$99.99',
         img: 'images/NikeAF1.png',
         link: 'index.html'
     },
@@ -132,7 +132,7 @@ const products = [
     {
         category: 'Shoes',
         title: 'Yeezy 350',
-        price: '$79.99',
+        price: '$399.99',
         img: 'images/Yeezy-350.png',
         link: 'index.html'
     },
