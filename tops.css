@@ -215,6 +215,20 @@ h1 {
         display: block;
     }
 
+    .tops {
+        grid-template-columns: 1fr 1fr;
+    }
+   
+
+
+}
+
+@media screen and (max-width:685px) {
+   
+
+    .tops {
+        grid-template-columns: 1fr;
+    }
    
 
 
