@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bold-font-weight: 700;
+    --medium-font-weight: 400;
+    --small-font-weight: 300;
+}
+
+h1, h2, h3 {
+    font-weight: var(--bold-font-weight);
+}
+
+/* HEADER */
+.banner {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    font-weight: var(--bold-font-weight);
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+   
+}
+/* MOBILE NAVIGATION */
+.mobile-nav {
+    background: black;
+    color: white;
+    height: 100vh;
+    padding: 2em;
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    left: -3000px;
+}
+
+.close {
+    left: -3000px;
+    transition: 0.8s;
+}
+
+.open {
+    left: 0;
+    transition: 0.6s;
+}
+
+.mobile-links {
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-xmark {
+    font-size: 3rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1em;
+}
+
+
+/* SITE NAVIGATION */
+.fa-bars-staggered {
+    font-size: 2rem;
+    display: none;
+}
+
+.site-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 4em;
+    background: transparent;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: var(--bold-font-weight);
+    cursor: pointer;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+}
+
+.site-links {
+    display: flex;
+    font-size: 1.3rem;
+    gap: 2em;
+}
+
+.site-links a:hover {
+    text-decoration: 4px #42A0C7 overline;
+}
+
+.site-nav-right {
+    display: flex;
+    font-size: 1.3rem;
+    gap: 2em;
+    cursor: pointer;
+}
+
+
+/* CONTACT MAIN SECTION */
+
+main {
+    background-image: url('images/contact-background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 300px;
+    background-position-x: -300px;
+    height: 130vh;
+}
+
+
+h1 {
+    font-size: 3rem;
+    font-weight: var(--medium-font-weight);
+    text-align: center;
+    letter-spacing: 0.1rem;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-around;
+    padding: 4em 6em;
+}
+
+.contact-left {
+    font-size: 4rem;
+    font-weight: var(--bold-font-weight);
+    text-transform: uppercase;
+    padding: 1em 0em;
+    line-height: 6rem;
+    text-align: center;
+}
+
+.contact-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-top, .contact-center, .contact-bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    height: 50px;
+    font-size: 16px;
+    padding: 0em 1em;
+}
+
+textarea {
+    height: 250px;
+    width: 350px;
+    font-size: 16px;
+    padding: 0em 1em;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+/* FOOTER SECTION */
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 6em 2em;
+    background: black;
+    color: white;
+}
+
+.logo-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo-text {
+    text-transform: uppercase;
+}
+
+.link-header {
+    text-transform: uppercase;
+    font-weight: var(--bold-font-weight);
+    font-size: 1.2rem;
+}
+
+.link-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    font-weight: var(--small-font-weight);
+    opacity: 90%;
+}
+
+.links li:hover {
+    text-decoration: 3px #42A0C7 underline;
+}
+
+.email-input {
+    /* padding: 1em;
+    border-radius: 2em; */
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.input-field {
+    display: flex;
+    width: 300px;
+    border-radius: 2em;
+    padding: 0.3em 0.2em;
+    padding-left: 1em;
+    border-radius: 2em;
+    background: white;
+    align-items: center;
+    font-size: 16px;
+}
+
+.fa-paper-plane {
+    color: black;
+    font-size: 1.3rem;
+    cursor: pointer;
+    background: #42A0C7 ;
+    border-radius: 1em;
+    padding: 0.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width:1100px) {
+    .site-links, .site-nav-right {
+        display: none;
+    }
+    .fa-bars-staggered {
+        display: block;
+    }
+
+   
+
+
+}
+
+@media screen and (max-width:1278px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+   
+}
+
+@media screen and (max-width:1144px) {
+    h1 {
+        font-size: 2.7rem;
+    }
+
+    
+}
+
+@media screen and (max-width:1062px) {
+    h1 {
+        font-size: 2.3rem;
+    }
+
+    
+}
