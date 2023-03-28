@@ -198,7 +198,7 @@ h1 {
     color: black;
     font-size: 3rem;
     font-weight: var(--bold-font-weight);
-    padding: 2em 1.5em;
+    padding: 2em 1.3em;
     padding-top: 4em;
     position: absolute;
     opacity: 0;
@@ -209,10 +209,6 @@ h1 {
     
 }
 
-.card:hover {
-    /* opacity: 65%; */
-    
-}
 
 #link:hover {
     cursor: pointer;
