@@ -127,13 +127,13 @@ main {
     background-repeat: no-repeat;
     background-position: center;
     background-position-y: 300px;
-    background-position-x: -300px;
-    height: 130vh;
+    background-position-x: -100px;
+    height: 140vh;
 }
 
 
 h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: var(--medium-font-weight);
     text-align: center;
     letter-spacing: 0.1rem;
@@ -142,21 +142,21 @@ h1 {
 .contact {
     display: flex;
     justify-content: space-around;
-    padding: 4em 6em;
+    padding: 1em;
 }
 
 .contact-left {
-    font-size: 4rem;
+    font-size: 6rem;
     font-weight: var(--bold-font-weight);
     text-transform: uppercase;
-    padding: 1em 0em;
-    line-height: 6rem;
+    line-height: 7rem;
     text-align: center;
 }
 
 .contact-right {
     display: flex;
     flex-direction: column;
+    gap: 1.5em;
 }
 
 .contact-top, .contact-center, .contact-bottom {
@@ -172,13 +172,17 @@ input {
 
 textarea {
     height: 250px;
-    width: 350px;
+    max-width: 450px;
     font-size: 16px;
     padding: 0em 1em;
 }
 
 input:focus, textarea:focus {
     outline: none;
+}
+
+.fa-message {
+    color: #42A0C7;
 }
 
 /* FOOTER SECTION */
@@ -285,26 +289,80 @@ footer {
 
 }
 
-@media screen and (max-width:1278px) {
-    h1 {
-        font-size: 3rem;
+@media screen and (max-width:1176px) {
+    .contact-left {
+        font-size: 5rem;
     }
 
    
 }
 
-@media screen and (max-width:1144px) {
-    h1 {
-        font-size: 2.7rem;
+@media screen and (max-width:924px) {
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
     }
 
+    input {
+        width: 100%;
+    
+    }
+
+    main {
+        
+        background-position-x: -500px;
+    }
+
+   
     
 }
 
-@media screen and (max-width:1062px) {
-    h1 {
-        font-size: 2.3rem;
+@media screen and (max-width: 1165px) {
+   
+    footer {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     gap: 2em;
+     justify-content: center;
+     align-items: center;
     }
-
+ 
+    #social {
+     grid-column:2 / 3;
+    }
+ }
+ 
+ @media screen and (max-width: 887px) {
     
-}
+     footer {
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+     }
+ 
+     footer section {
+         align-items: center;
+         justify-content: center;
+     }
+ 
+     .link-group {
+         text-align: center;
+     }
+ 
+     .logo-text {
+         text-align: center;
+     }
+  
+    
+  }
+
+  @media screen and (max-width: 654px) {
+    
+   .contact-left {
+    font-size: 3rem;
+   }
+ 
+   
+ }
