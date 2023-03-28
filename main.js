@@ -23,76 +23,86 @@ const products = [
         title: 'Drake Crewneck',
         price: '$49.99',
         img: 'images/Drake-Crewneck.png',
-        link: 'index.html'
+        link: 'index.html',
     },
     {
         category: 'Tops',
         title: 'Gucci T-Shirt',
         price: '$149.99',
-        img: 'images/Gucci-TShirt.png'
+        img: 'images/Gucci-TShirt.png',
+        link: 'index.html'
     },
 
     {
         category: 'Tops',
         title: 'Kobe Bryant Jersey',
         price: '$299.99',
-        img: 'images/Kobe-Bryant-Jersey.png'
+        img: 'images/Kobe-Bryant-Jersey.png',
+        link: 'index.html'
     },
 
     {
         category: 'Tops',
         title: 'Michael Jordan Jersey',
         price: '$299.99',
-        img: 'images/Michael-Jordan-Jersey.png'
+        img: 'images/Michael-Jordan-Jersey.png',
+        link: 'index.html'
     },
 
     {
         category: 'Tops',
         title: 'Nike Crewneck',
         price: '$29.99',
-        img: 'images/Nike-Crewneck.png'
+        img: 'images/Nike-Crewneck.png',
+        link: 'index.html'
     },
 
     {
         category: 'Tops',
         title: 'OVO Hoodie',
         price: '$129.99',
-        img: 'images/OVO-Hoodie.png'
+        img: 'images/OVO-Hoodie.png',
+        link: 'index.html'
     },
 
     {
         category: 'Tops',
         title: 'Supreme T-Shirt',
         price: '$99.99',
-        img: 'images/Supreme-TShirt.png'
+        img: 'images/Supreme-TShirt.png',
+        link: 'index.html'
     },
 
     {
         category: 'Tops',
         title: 'Kentucky Crewneck',
         price: '$49.99',
-        img: 'images/Womens-Kentucky-Crewneck.png'
+        img: 'images/Womens-Kentucky-Crewneck.png',
+        link: 'index.html'
     },
 
     {
         category: 'Tops',
         title: 'Louis Vuitton T-Shirt',
         price: '$149.99',
-        img: 'images/Womens-LousVuitton-Shirt.png'
+        img: 'images/Womens-LousVuitton-Shirt.png',
+        link: 'index.html'
     },
 
     {
         category: 'Tops',
         title: 'Women\'s OVO T-Shirt',
         price: '$59.99',
-        img: 'images/Womens-OVO-Shirt.png'
+        img: 'images/Womens-OVO-Shirt.png',
+        link: 'index.html'
     },
 
     {
         category: 'Tops',
         title: 'Yeezus T-Shirt',
         price: '$79.99',
-        img: 'images/Yeezus-Shirt.png'
+        img: 'images/Yeezus-Shirt.png',
+        link: 'index.html'
     }
     
 ]
