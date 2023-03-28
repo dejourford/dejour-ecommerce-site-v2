@@ -91,7 +91,7 @@ const products = [
 
     {
         category: 'Tops',
-        title: 'Women\'s OVO T-Shirt',
+        title: 'OVO T-Shirt',
         price: '$59.99',
         img: 'images/Womens-OVO-Shirt.png',
         link: 'index.html'
@@ -103,8 +103,72 @@ const products = [
         price: '$79.99',
         img: 'images/Yeezus-Shirt.png',
         link: 'index.html'
+    },
+
+    {
+        category: 'Shoes',
+        title: 'Jordan 11',
+        price: '$79.99',
+        img: 'images/Jordan-11.png',
+        link: 'index.html'
+    },
+
+    {
+        category: 'Shoes',
+        title: 'Kobe Mamba',
+        price: '$49.99',
+        img: 'images/Kobe-Black-Mamba.png',
+        link: 'index.html'
+    },
+
+    {
+        category: 'Shoes',
+        title: 'Nike Air Force 1',
+        price: '$39.99',
+        img: 'images/NikeAF1.png',
+        link: 'index.html'
+    },
+
+    {
+        category: 'Shoes',
+        title: 'Yeezy 350',
+        price: '$79.99',
+        img: 'images/Yeezy-350.png',
+        link: 'index.html'
+    },
+
+    {
+        category: 'Shoes',
+        title: 'Yeezy Slides',
+        price: '$79.99',
+        img: 'images/Yeezy-Slides.png',
+        link: 'index.html'
+    },
+
+    {
+        category: 'Bottoms',
+        title: 'Bape Pants',
+        price: '$79.99',
+        img: 'images/Bape-Pants.png',
+        link: 'index.html'
+    },
+
+    {
+        category: 'Bottoms',
+        title: 'Bape Shorts',
+        price: '$79.99',
+        img: 'images/Bape-Shorts.png',
+        link: 'index.html'
+    },
+
+    {
+        category: 'Bottoms',
+        title: 'Peach Dress',
+        price: '$79.99',
+        img: 'images/Womens-Dress.png',
+        link: 'index.html'
     }
-    
+
 ]
 
 
