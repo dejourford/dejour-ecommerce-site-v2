@@ -98,25 +98,40 @@ console.log(products.length)
 for (let i = 0; i < products.length; i++) {
     console.log(products[i])
 
+    // create a new card each time
     const newCard = document.createElement('div')
     newCard.classList.add('card')
+    
+    // create the card body
     const newCardBody = document.createElement('div')
     newCardBody.classList.add('card-body')
+    
+    // create the img div
     const cardImg = document.createElement('img')
     cardImg.classList.add('img')
     cardImg.src = products[i].img
+    
+    // create the card footer div
     const newCardFooter = document.createElement('div')
     newCardFooter.classList.add('card-footer')
+    
+    // create the card title span
     const cardTitle = document.createElement('span')
     cardTitle.classList.add('title')
     cardTitle.textContent = products[i].title
+    
+    // create the card price span
     const cardPrice = document.createElement('span')
     cardPrice.classList.add('price')
     cardPrice.textContent = products[i].price
+    
+    // create the add to cart button
     const addToCartBtn = document.createElement('button')
     addToCartBtn.classList.add('add-to-cart-btn')
     addToCartBtn.textContent = 'add to cart'
 
+    // append all elements to card 
+    // and card to DOM
     newCard.appendChild(newCardBody)
     newCard.appendChild(newCardFooter)
     newCardBody.append(cardImg)
