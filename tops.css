@@ -119,7 +119,14 @@ h1, h2, h3 {
     cursor: pointer;
 }
 
-/* HERO SECTION */
+/* TOPS SECTION */
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: var(--medium-font-weight);
+    margin-top: 2em;
+}
 
 
 

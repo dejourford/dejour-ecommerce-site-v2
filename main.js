@@ -87,6 +87,38 @@ const products = [
 
 
 console.log(products.length)
+// const img = document.querySelector('#img')
+// const title = document.querySelector('#title')
+// const price = document.querySelector('#price')
+// const tops = document.querySelector('#tops')
+// const cardBody = document.querySelector('.card-body')
+// const cardFooter = document.querySelector('.card-footer')
+// const card = document.querySelector('#card')
+
 for (let i = 0; i < products.length; i++) {
     console.log(products[i])
+
+    const newCard = document.createElement('div')
+    newCard.classList.add('card')
+    const newCardBody = document.createElement('div')
+    newCardBody.classList.add('card-body')
+    const cardImg = document.createElement('img')
+    cardImg.classList.add('img')
+    cardImg.src = products[i].img
+    const newCardFooter = document.createElement('div')
+    newCardFooter.classList.add('card-footer')
+    const cardTitle = document.createElement('span')
+    cardTitle.classList.add('title')
+    cardTitle.textContent = products[i].title
+    const cardPrice = document.createElement('span')
+    cardPrice.classList.add('price')
+    cardPrice.textContent = products[i].price
+
+    newCard.appendChild(newCardBody)
+    newCard.appendChild(newCardFooter)
+    newCardBody.append(cardImg)
+    newCardFooter.append(cardTitle, cardPrice)
+    tops.append(newCard)
+    
+    
 }
