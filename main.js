@@ -172,19 +172,19 @@ const products = [
 ]
 
 
-console.log(products.length)
-// const img = document.querySelector('#img')
-// const title = document.querySelector('#title')
-// const price = document.querySelector('#price')
-// const tops = document.querySelector('#tops')
-// const cardBody = document.querySelector('.card-body')
-// const cardFooter = document.querySelector('.card-footer')
-// const card = document.querySelector('#card')
 
+
+console.log(products.length)
+
+
+
+// cycle through all products
 for (let i = 0; i < products.length; i++) {
-    console.log(products[i])
-    if (products[i].category == 'Tops') {
-        // create a new card each time
+    
+    // create function for making cards
+    createNewCard = () => {
+    
+    // create a new card each time
     const newCard = document.createElement('div')
     newCard.classList.add('card')
     
@@ -231,8 +231,11 @@ for (let i = 0; i < products.length; i++) {
     newCardBody.append(cardImg)
     newCardFooter.append(cardTitle, cardPrice, addToCartBtn)
     tops.append(newCard)
-        
     }
-   
     
+    
+    // if statement for tops
+    if (products[i].category == 'Tops'){
+        createNewCard()
+    }
 }
