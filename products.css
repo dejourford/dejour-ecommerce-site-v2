@@ -206,15 +206,13 @@ h1 {
     letter-spacing: 0.3rem;
     align-self: center;
     margin-top: 100px;
-    
-    
 }
 
 
 #link:hover {
     cursor: pointer;
     opacity: 100%;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(4px);
 
 }
 
