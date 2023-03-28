@@ -164,6 +164,10 @@ h1 {
     flex-direction: column;
 }
 
+.contact-top, .contact-center, .contact-bottom span {
+    font-weight: var(--bold-font-weight);
+}
+
 input {
     height: 50px;
     font-size: 16px;
@@ -183,6 +187,18 @@ input:focus, textarea:focus {
 
 .fa-message {
     color: #42A0C7;
+}
+
+.submit-btn {
+    padding: 1em;
+    border: none;
+    background: whitesmoke;
+    font-size: 1.2rem;
+    font-weight: var(--bold-font-weight);
+}
+
+.submit-btn:hover {
+    background: #42A0C7;
 }
 
 /* FOOTER SECTION */
@@ -364,5 +380,11 @@ footer {
     font-size: 3rem;
    }
  
+   .contact-top, .contact-center, .contact-bottom span {
+    
+    text-align: center;
+}
    
  }
+
+ 
