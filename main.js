@@ -23,7 +23,7 @@ const products = [
         title: 'Drake Crewneck',
         price: '$49.99',
         img: 'images/Drake-Crewneck.png',
-        link: '/product-pages/drake-crewneck.html',
+        link: 'drake-crewneck.html',
     },
     {
         category: 'Tops',
