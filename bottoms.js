@@ -30,7 +30,7 @@ const products = [
         title: 'Gucci T-Shirt',
         price: '$149.99',
         img: 'images/Gucci-TShirt.png',
-        link: 'index.html'
+        link: '/product-pages/gucci-tshirt.html'
     },
 
     {
@@ -38,7 +38,7 @@ const products = [
         title: 'Kobe Bryant Jersey',
         price: '$299.99',
         img: 'images/Kobe-Bryant-Jersey.png',
-        link: 'index.html'
+        link: '/product-pages/kobe-jersey.html'
     },
 
     {
@@ -46,7 +46,7 @@ const products = [
         title: 'Michael Jordan Jersey',
         price: '$299.99',
         img: 'images/Michael-Jordan-Jersey.png',
-        link: 'index.html'
+        link: '/product-pages/jordan-jersey.html'
     },
 
     {
@@ -54,7 +54,7 @@ const products = [
         title: 'Nike Crewneck',
         price: '$29.99',
         img: 'images/Nike-Crewneck.png',
-        link: 'index.html'
+        link: '/product-pages/nike-crewneck.html'
     },
 
     {
@@ -62,7 +62,7 @@ const products = [
         title: 'OVO Hoodie',
         price: '$129.99',
         img: 'images/OVO-Hoodie.png',
-        link: 'index.html'
+        link: '/product-pages/ovo-hoodie.html'
     },
 
     {
@@ -70,7 +70,7 @@ const products = [
         title: 'Supreme T-Shirt',
         price: '$99.99',
         img: 'images/Supreme-TShirt.png',
-        link: 'index.html'
+        link: '/product-pages/supreme-tshirt.html'
     },
 
     {
@@ -78,7 +78,7 @@ const products = [
         title: 'Kentucky Crewneck',
         price: '$49.99',
         img: 'images/Womens-Kentucky-Crewneck.png',
-        link: 'index.html'
+        link: '/product-pages/kentucky-crewneck.html'
     },
 
     {
@@ -86,7 +86,7 @@ const products = [
         title: 'Louis Vuitton T-Shirt',
         price: '$149.99',
         img: 'images/Womens-LousVuitton-Shirt.png',
-        link: 'index.html'
+        link: '/product-pages/louis-vuitton.html'
     },
 
     {
@@ -94,7 +94,7 @@ const products = [
         title: 'OVO T-Shirt',
         price: '$59.99',
         img: 'images/Womens-OVO-Shirt.png',
-        link: 'index.html'
+        link: '/product-pages/ovo-tshirt.html'
     },
 
     {
@@ -102,39 +102,39 @@ const products = [
         title: 'Yeezus T-Shirt',
         price: '$79.99',
         img: 'images/Yeezus-Shirt.png',
-        link: 'index.html'
+        link: '/product-pages/yeezus-tshirt.html'
     },
 
     {
         category: 'Shoes',
         title: 'Jordan 11',
-        price: '$79.99',
+        price: '$219.99',
         img: 'images/Jordan-11.png',
-        link: 'index.html'
+        link: '/product-pages/jordan11.html'
     },
 
     {
         category: 'Shoes',
         title: 'Kobe Mamba',
-        price: '$49.99',
+        price: '$129.99',
         img: 'images/Kobe-Black-Mamba.png',
-        link: 'index.html'
+        link: '/product-pages/kobe-mamba.html'
     },
 
     {
         category: 'Shoes',
         title: 'Nike Air Force 1',
-        price: '$39.99',
+        price: '$99.99',
         img: 'images/NikeAF1.png',
-        link: 'index.html'
+        link: '/product-pages/nike-af1.html'
     },
 
     {
         category: 'Shoes',
         title: 'Yeezy 350',
-        price: '$79.99',
+        price: '$399.99',
         img: 'images/Yeezy-350.png',
-        link: 'index.html'
+        link: '/product-pages/yeezy350.html'
     },
 
     {
@@ -142,7 +142,7 @@ const products = [
         title: 'Yeezy Slides',
         price: '$79.99',
         img: 'images/Yeezy-Slides.png',
-        link: 'index.html'
+        link: '/product-pages/yeezy-slides.html'
     },
 
     {
@@ -158,7 +158,7 @@ const products = [
         title: 'Bape Shorts',
         price: '$79.99',
         img: 'images/Bape-Shorts.png',
-        link: 'index.html'
+        link: '/product-pages/bape-shorts.html'
     },
 
     {
@@ -166,7 +166,7 @@ const products = [
         title: 'Peach Dress',
         price: '$79.99',
         img: 'images/Womens-Dress.png',
-        link: 'index.html'
+        link: '/product-pages/dress.html'
     }
 
 ]
