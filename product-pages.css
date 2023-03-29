@@ -134,7 +134,7 @@ h1, h2, h3 {
 }
 
 .product-left img {
-    max-width: 80%;
+    width: 80%;
     background: whitesmoke;
     padding: 2em;
 }
