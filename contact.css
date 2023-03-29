@@ -387,13 +387,14 @@ footer {
     
    .contact-left {
     font-size: 3rem;
+    line-height: normal;
    }
  
    .contact-top, .contact-center, .contact-bottom span {
-    
     text-align: center;
-}
+    }
    
- }
+
+}
 
  
