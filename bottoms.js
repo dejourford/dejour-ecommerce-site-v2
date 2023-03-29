@@ -150,7 +150,7 @@ const products = [
         title: 'Bape Pants',
         price: '$79.99',
         img: 'images/Bape-Pants.png',
-        link: 'index.html'
+        link: '/product-pages/bape-pants.html'
     },
 
     {
