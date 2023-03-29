@@ -200,8 +200,10 @@ input:focus, textarea:focus {
     padding: 1em;
     border: none;
     background: whitesmoke;
+    color: black;
     font-size: 1.2rem;
     font-weight: var(--bold-font-weight);
+    box-shadow: 0px 10px 20px rgb(0, 0, 0, 0.2);
 }
 
 .submit-btn:hover {
@@ -399,6 +401,7 @@ footer {
     text-align: center;
     }
    
+
 
 }
 
