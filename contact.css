@@ -259,6 +259,7 @@ footer {
     width: 100%;
     border: none;
     outline: none;
+    font-size: 16px;
 }
 
 .input-field {
