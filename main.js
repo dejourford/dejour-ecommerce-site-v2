@@ -23,14 +23,14 @@ const products = [
         title: 'Drake Crewneck',
         price: '$49.99',
         img: 'images/Drake-Crewneck.png',
-        link: 'index.html',
+        link: '/product-pages/drake-crewneck.html',
     },
     {
         category: 'Tops',
         title: 'Gucci T-Shirt',
         price: '$149.99',
         img: 'images/Gucci-TShirt.png',
-        link: 'index.html'
+        link: '/product-pages/gucci-tshirt.html'
     },
 
     {
