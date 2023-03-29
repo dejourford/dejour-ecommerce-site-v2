@@ -63,12 +63,13 @@ h1, h2, h3 {
 }
 
 .mobile-links {
-    font-size: 2.5rem;
+    font-size: 2rem;
     display: flex;
     flex-direction: column;
     gap: 1em;
     justify-content: center;
     align-items: center;
+    letter-spacing: 0.3rem;
 }
 
 .fa-xmark {
