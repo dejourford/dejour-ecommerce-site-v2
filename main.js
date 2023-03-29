@@ -22,7 +22,7 @@ const products = [
         category: 'Tops',
         title: 'Drake Crewneck',
         price: '$49.99',
-        img: 'images/Drake-Crewneck.png',
+        img: '/images/Drake-Crewneck.png',
         link: '/product-pages/drake-crewneck.html',
     },
     {
@@ -235,7 +235,7 @@ for (let i = 0; i < products.length; i++) {
     
     
     // if statement for tops
-    if (products[i].category == 'Tops'){
-        createNewCard()
-    }
+    // if (products[i].category == 'Tops'){
+    //     createNewCard()
+    // }
 }
