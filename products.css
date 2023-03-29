@@ -338,7 +338,12 @@ footer {
         padding: 1.5em;
     }
    
-
+    #link:hover {
+        
+        opacity: 0%;
+        
+    
+    }
 
 }
 
