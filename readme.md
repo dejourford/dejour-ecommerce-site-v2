@@ -12,4 +12,5 @@ This project is an E-Commerece website that is aimed at improving my HTML, CSS, 
 <br>
 <h1>IMPROVEMENTS</h1>
 --add ability to create new account
+--add stripe integration
 <h1>LESSONS LEARNED</h1>
