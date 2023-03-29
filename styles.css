@@ -27,6 +27,18 @@ h1, h2, h3 {
     font-weight: var(--bold-font-weight);
 }
 
+/* SCROLLBAR */
+::-webkit-scrollbar-thumb {
+    scroll-behavior: smooth;
+}
+
+  
+  
+  
+
+
+
+
 /* HEADER */
 .banner {
     background: black;
