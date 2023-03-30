@@ -238,3 +238,12 @@ for (let i = 0; i < products.length; i++) {
         createNewCard()
     }
 }
+
+// ADDING ITEMS TO CART
+const addToCartBtn = document.querySelectorAll('.add-to-cart-btn').forEach(item => {
+    item.addEventListener('click', event => {
+      //handle click
+      let price = document.querySelector(".price").textContent
+      console.log(price)
+    })
+  })

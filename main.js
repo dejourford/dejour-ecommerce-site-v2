@@ -234,8 +234,18 @@ for (let i = 0; i < products.length; i++) {
     }
     
     
-    // if statement for tops
-    // if (products[i].category == 'Tops'){
-    //     createNewCard()
-    // }
+   
 }
+
+
+
+
+// ADDING ITEMS TO CART
+// const addToCartBtn = document.querySelector('.add-to-cart-btn').addEventListener('click', () => {
+//     let price = document.querySelector('.price').textContent
+//     console.log(price)
+// })
+
+window.onclick = e => {
+    console.log(e.target.innerText);
+} 
