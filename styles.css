@@ -103,18 +103,18 @@ h1, h2, h3 {
     display: none;
     font-size: 1.5rem;
     align-items: center;
-    gap: 1em;
+    gap: 1.5em;
 }
 
 .site-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2em 4em;
+    padding: 2em 1em;
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: var(--bold-font-weight);
     cursor: pointer;
     letter-spacing: 0.3rem;
