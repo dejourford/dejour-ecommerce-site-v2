@@ -132,6 +132,10 @@ h1, h2, h3 {
     align-items: center;
 }
 
+.site-nav-right a:hover {
+    opacity: 30%;
+}
+
 /* SHOPPING CART SECTION */
 h1 {
     font-size: 2rem;
@@ -236,6 +240,10 @@ h1 {
 
 .emphasis {
     color: #42A0C7;
+}
+
+.emphasis:hover {
+    opacity: 60%;
 }
 
 /* FOOTER SECTION */
