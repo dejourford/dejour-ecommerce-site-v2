@@ -132,6 +132,111 @@ h1, h2, h3 {
     align-items: center;
 }
 
+/* SHOPPING CART SECTION */
+h1 {
+    font-size: 2rem;
+    padding: 1.5em 0em;
+    border-bottom: 1px solid lightgray;
+    
+}
+
+.shopping-cart {
+    width: 70%;
+    margin: 0 auto;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-row {
+    display: flex;
+    align-items: start;
+    padding: 3em 0em;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+}
+
+.shopping-cart-left {
+    display: flex;
+    gap: 0.5em;
+}
+
+.shopping-cart-left img {
+    height: 150px;
+    width: 150px;
+    /* object-fit: cover; */
+    background: #E4ECF1;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.title, .price {
+    font-size: 1.2rem;
+    font-weight: var(--bold-font-weight);
+}
+
+.invoice {
+    background: #E4ECF1;
+    border-radius: 0.5em;
+    width: 100%;
+    padding: 2em;
+    align-items: right;
+    margin: 0 auto;
+    margin-top: 4em;
+    
+}
+
+.invoice-row {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    padding: 1em;
+}
+
+#total {
+    border: none;
+}
+
+.group-name {
+    color: rgba(0, 0, 0, 0.684);
+    font-size: 1.2rem;
+}
+
+#total, .group-price {
+    color: black;
+    font-size: 1.2rem;
+    font-weight: var(--bold-font-weight);
+}
+
+.checkout-button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.checkout-btn {
+    width: 100%;
+    padding: 1em;
+    font-size: 1.3rem;
+    border-radius: 0.5em 0.5em;
+    border: none;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+.checkout-btn:hover {
+    opacity: 70%;
+}
+
+.continue-shopping-text {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.emphasis {
+    color: #42A0C7;
+}
 
 /* FOOTER SECTION */
 footer {
@@ -263,4 +368,26 @@ footer {
      }
   
     
+  }
+
+
+  @media screen and (max-width: 1276px) {
+    .shopping-cart {
+        padding: 1em;
+    }
+  }
+
+   @media screen and (max-width: 600px) {
+    .cart-row {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .shopping-cart {
+        padding: 0em;
+    }
+
+    .invoice {
+        padding: 0.5em;
+    }
   }
