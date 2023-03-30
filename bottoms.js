@@ -224,6 +224,9 @@ for (let i = 0; i < products.length; i++) {
     addToCartBtn.classList.add('add-to-cart-btn')
     addToCartBtn.textContent = 'Add To Cart'
 
+         // add data tag to add to cart button
+    addToCartBtn.dataset.price = parseFloat(products[i].price.slice(1))
+
     // append all elements to card 
     // and card to DOM
     newCard.appendChild(newCardBody)

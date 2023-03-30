@@ -224,6 +224,9 @@ for (let i = 0; i < products.length; i++) {
     addToCartBtn.classList.add('add-to-cart-btn')
     addToCartBtn.textContent = 'Add To Cart'
 
+    // add data tag to add to cart button
+    addToCartBtn.dataset.price = 219.99
+
     // append all elements to card 
     // and card to DOM
     newCard.appendChild(newCardBody)
@@ -241,11 +244,7 @@ for (let i = 0; i < products.length; i++) {
 
 
 // ADDING ITEMS TO CART
-// const addToCartBtn = document.querySelector('.add-to-cart-btn').addEventListener('click', () => {
-//     let price = document.querySelector('.price').textContent
-//     console.log(price)
-// })
-
-window.onclick = e => {
-    console.log(e.target.innerText);
-} 
+const addToCartBtn = document.querySelector('.add-to-cart-btn').addEventListener('click', () => {
+    const itemPrice = document.querySelector('.item-price')
+    console.log(itemPrice.dataset.price)
+})
