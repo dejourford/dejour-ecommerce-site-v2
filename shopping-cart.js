@@ -232,3 +232,4 @@ for (let i = 0; i < products.length; i++) {
     newCardFooter.append(cardTitle, cardPrice, addToCartBtn)
     tops.append(newCard)
     }
+}
