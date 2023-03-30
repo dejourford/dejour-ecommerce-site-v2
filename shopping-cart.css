@@ -144,6 +144,10 @@ h1, h2, h3 {
 }
 
 /* SHOPPING CART SECTION */
+main {
+    padding-bottom: 4em;
+}
+
 h1 {
     font-size: 2rem;
     padding: 1.5em 0em;
