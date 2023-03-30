@@ -125,6 +125,10 @@ h1, h2, h3 {
     align-items: center;
 }
 
+.site-nav-right a:hover {
+    opacity: 30%;
+}
+
 /* TOPS SECTION */
 h1 {
     text-align: center;

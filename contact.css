@@ -124,6 +124,9 @@ h1, h2, h3 {
     cursor: pointer;
     align-items: center;
 }
+.site-nav-right a:hover {
+    opacity: 30%;
+}
 
 
 /* CONTACT MAIN SECTION */
