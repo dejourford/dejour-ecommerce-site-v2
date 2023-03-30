@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bold-font-weight: 700;
+    --medium-font-weight: 400;
+    --small-font-weight: 300;
+}
+
+h1, h2, h3 {
+    font-weight: var(--bold-font-weight);
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar-thumb {
+    scroll-behavior: smooth;
+}
+
+  
+  
+  
+
+
+
+
+/* HEADER */
+.banner {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    font-weight: var(--bold-font-weight);
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+   
+}
+/* MOBILE NAVIGATION */
+.mobile-nav {
+    background: black;
+    color: white;
+    height: 100vh;
+    padding: 2em;
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    left: -3000px;
+}
+
+.close {
+    left: -3000px;
+    transition: 0.8s;
+}
+
+.open {
+    left: 0;
+    transition: 0.6s;
+}
+
+.mobile-links {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.3rem;
+}
+
+.fa-xmark {
+    font-size: 3rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1em;
+}
+
+
+/* SITE NAVIGATION */
+.fa-bars-staggered {
+    font-size: 2rem;
+    display: none;
+}
+
+.site-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 4em;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: var(--bold-font-weight);
+    cursor: pointer;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+}
+
+.site-links {
+    display: flex;
+    font-size: 1.3rem;
+    gap: 2em;
+}
+
+.site-links a:hover {
+    text-decoration: 4px #42A0C7 overline;
+}
+
+.site-nav-right {
+    display: flex;
+    font-size: 1.3rem;
+    gap: 2em;
+    cursor: pointer;
+}
+
+
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width:1100px) {
+    .site-links, .site-nav-right {
+        display: none;
+    }
+    .fa-bars-staggered {
+        display: block;
+    }
+
+   
+
+
+}
+
+
+@media screen and (max-width: 1165px) {
+   
+    footer {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     gap: 2em;
+     justify-content: center;
+     align-items: center;
+    }
+ 
+    #social {
+     grid-column:2 / 3;
+    }
+ }
+ 
+ @media screen and (max-width: 887px) {
+    
+     footer {
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+     }
+ 
+     footer section {
+         align-items: center;
+         justify-content: center;
+     }
+ 
+     .link-group {
+         text-align: center;
+     }
+ 
+     .logo-text {
+         text-align: center;
+     }
+  
+    
+  }
