@@ -49,35 +49,42 @@
         <main>
             <article class="shopping-cart">
                 <h1>Shopping Cart</h1>
-
-                <div class="shopping-cart-left">
-                    <img src="" alt="">
-                    <span class="title">Shirt Title</span>
-                </div>
-
-                <div class="shopping-cart-right">
-                    <span class="price">$39.99</span>
-                </div>
+                <section class="cart-row">
+                    
+                    <div class="shopping-cart-left">
+                        <img src="images/Bape-Pants.png" alt="">
+                        <span class="title">Shirt Title</span>
+                    </div>
+    
+                    <div class="shopping-cart-right">
+                        <span class="price">$39.99</span>
+                    </div>
+                </section>
+              
 
                 <section class="invoice">
                     <div class="invoice-items">
-                        <div class="subtotal-group">
-
+                        <div class="invoice-row">
+                            <span class="group-name">Subtotal</span>
+                            <span class="group-price" id="subtotal-price">$39.99</span>
                         </div>
-                        <div class="shipping-group">
-    
+                        <div class="invoice-row">
+                            <span class="group-name">Shipping</span>
+                            <span class="group-price" id="shipping-price">$39.99</span>
                         </div>
-                        <div class="tax-group">
-    
+                        <div class="invoice-row">
+                            <span class="group-name">Tax</span>
+                            <span class="group-price" id="tax-price">$39.99</span>
                         </div>
-                        <div class="order-total-group">
-    
+                        <div class="invoice-row total">
+                            <span class="group-name" id="total">Order Total</span>
+                            <span class="group-price" id="total-price">$139.99</span>
                         </div>
                     </div>
 
                     <div class="checkout-button-group">
                         <a href=""><button class="checkout-btn">Checkout</button></a>
-                        <p class="continue-shopping-text"><span class="emphasis">or</span>Continue Shopping &RightArrow;</p>
+                       <a href="tops.html"><p class="continue-shopping-text">or <span class="emphasis">Continue Shopping&RightArrow;</span> </p></a> 
                     </div>
                     
                 </section>
