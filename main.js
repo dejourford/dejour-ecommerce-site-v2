@@ -236,15 +236,7 @@ for (let i = 0; i < products.length; i++) {
     tops.append(newCard)
     }
     
-    
+ 
    
 }
 
-
-
-
-// ADDING ITEMS TO CART
-const addToCartBtn = document.querySelector('.add-to-cart-btn').addEventListener('click', () => {
-    const itemPrice = document.querySelector('.item-price')
-    console.log(itemPrice.dataset.price)
-})

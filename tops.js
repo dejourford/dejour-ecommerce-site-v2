@@ -234,20 +234,35 @@ for (let i = 0; i < products.length; i++) {
     newCardBody.append(cardImg)
     newCardFooter.append(cardTitle, cardPrice, addToCartBtn)
     tops.append(newCard)
-    }
+
     
+        // ADDING ITEMS TO CART
+        // AND GETTING PRICE OF ITEMS
+     addToCartBtn.addEventListener('click', (e) => {
+        let number = e.target.dataset.price
+        console.log(number)
+     }) 
+
+
+
+    }
     
     // if statement for tops
     if (products[i].category == 'Tops'){
         createNewCard()
     }
+
+    
+
+    
+    
+
 }
 
-// ADDING ITEMS TO CART
-const addToCartBtn = document.querySelectorAll('.add-to-cart-btn').forEach(item => {
-    item.addEventListener('click', event => {
-      //handle click
-      let price = document.querySelector(".price").textContent
-      console.log(price)
-    })
-  })
+
+
+
+   
+
+
+
