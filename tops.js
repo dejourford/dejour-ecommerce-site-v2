@@ -1,8 +1,11 @@
+// GLOBAL VARIABLES
+const ls = localStorage
+let totals = []
+
 // // NAV CLOSE
 const closeBtn = document.querySelector('.fa-xmark')
 const mobileNav =  document.querySelector('.mobile-nav')
 const hamburgerMenu = document.querySelector('.fa-bars-staggered')
-
 closeMenu = () => {
     mobileNav.classList.remove('open')
     mobileNav.classList.add('close')
@@ -224,7 +227,9 @@ for (let i = 0; i < products.length; i++) {
     addToCartBtn.textContent = 'Add To Cart'
 
     // add data tag to add to cart button
+    // and get price with removed $ sign
     addToCartBtn.dataset.price = parseFloat(products[i].price.slice(1))
+    
     
 
     // append all elements to card 
@@ -235,24 +240,45 @@ for (let i = 0; i < products.length; i++) {
     newCardFooter.append(cardTitle, cardPrice, addToCartBtn)
     tops.append(newCard)
 
-    
-        // ADDING ITEMS TO CART
-        // AND GETTING PRICE OF ITEMS
-     addToCartBtn.addEventListener('click', (e) => {
-        let number = e.target.dataset.price
-        console.log(number)
-     }) 
+    // create click listener to add prices to 
+    // local storage
+    addToCartBtn.addEventListener('click', (e) => {
+        if (!ls.subtotal) {
+            
+           
+            let number = e.target.dataset.price
+            totals.push(number)
+            ls.setItem('subtotal', JSON.stringify(totals))
+        }
 
+        else {
+            totalToJSON = ls.getItem('subtotal')
+            totals = JSON.parse(totalToJSON)
+            console.log(totals)
+            let number = e.target.dataset.price
+            totals.push(number)
+            
+            ls.setItem('subtotal',JSON.stringify(totals))
+        }
+       
+        
+    })
+
+   
 
 
     }
     
+
+    
+
+
     // if statement for tops
     if (products[i].category == 'Tops'){
         createNewCard()
     }
 
-    
+  
 
     
     
