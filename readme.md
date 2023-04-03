@@ -17,3 +17,4 @@ This project is an E-Commerece website that is aimed at improving my HTML, CSS, 
 <br>
 --add quantity to products and oos statuses
 <h1>LESSONS LEARNED</h1>
+--learned how to use JSON.parse and JSON.stringify
