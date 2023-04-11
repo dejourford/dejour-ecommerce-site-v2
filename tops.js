@@ -267,9 +267,7 @@ for (let i = 0; i < products.length; i++) {
    
 
 
-    }
-    
-
+}
     
 
 
@@ -284,6 +282,14 @@ for (let i = 0; i < products.length; i++) {
     
 
 }
+
+
+
+
+
+
+
+
 
 
 
