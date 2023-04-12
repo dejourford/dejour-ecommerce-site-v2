@@ -1,5 +1,5 @@
 ls = localStorage
-
+ 
 // // NAV CLOSE
 const closeBtn = document.querySelector('.fa-xmark')
 const mobileNav =  document.querySelector('.mobile-nav')
@@ -20,9 +20,8 @@ openMenu = () => {
 
 let storedTotals = ls.getItem('subtotal')
 const numbers = JSON.parse(storedTotals)
-console.log(typeof(numbers))
-const sum = numbers.reduce(function(total, number) {
-    return total + number;
-  }, 0);
+const sum = numbers.reduce( (total, number) =>
+    total + number, 0).toFixed(2);
 console.log(sum)
+
 
