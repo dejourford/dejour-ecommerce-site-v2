@@ -230,7 +230,6 @@ for (let i = 0; i < products.length; i++) {
     // and get price with removed $ sign
     addToCartBtn.dataset.price = parseFloat(products[i].price.slice(1))
     
-    
 
     // append all elements to card 
     // and card to DOM
@@ -246,7 +245,7 @@ for (let i = 0; i < products.length; i++) {
         if (!ls.subtotal) {
             
            
-            let number = e.target.dataset.price
+            let number = Number(e.target.dataset.price)
             totals.push(number)
             ls.setItem('subtotal', JSON.stringify(totals))
         }
@@ -255,7 +254,8 @@ for (let i = 0; i < products.length; i++) {
             totalToJSON = ls.getItem('subtotal')
             totals = JSON.parse(totalToJSON)
             console.log(totals)
-            let number = e.target.dataset.price
+            let number = Number(e.target.dataset.price)
+            console.log(typeof(number))
             totals.push(number)
             
             ls.setItem('subtotal',JSON.stringify(totals))
