@@ -19,6 +19,7 @@ openMenu = () => {
    
 }
 
+
 // PRODUCTS 
 const products = [ 
     {
@@ -184,7 +185,7 @@ console.log(products.length)
 for (let i = 0; i < products.length; i++) {
     
     // create function for making cards
-    createNewCard = () => {
+    const createNewCard = () => {
     
     // create a new card each time
     const newCard = document.createElement('div')
@@ -241,24 +242,46 @@ for (let i = 0; i < products.length; i++) {
 
     // create click listener to add prices to 
     // local storage
-    addToCartBtn.addEventListener('click', (e) => {
-        if (!ls.subtotal) {
+    // addToCartBtn.addEventListener('click', (e) => {
+    //     if (!ls.subtotal) {
             
            
-            let number = Number(e.target.dataset.price)
-            totals.push(number)
-            ls.setItem('subtotal', JSON.stringify(totals))
+    //         let number = Number(e.target.dataset.price)
+    //         totals.push(number)
+    //         ls.setItem('subtotal', JSON.stringify(totals))
+    //     }
+
+    //     else {
+    //         totalToJSON = ls.getItem('subtotal')
+    //         totals = JSON.parse(totalToJSON)
+    //         console.log(totals)
+    //         let number = Number(e.target.dataset.price)
+    //         console.log(typeof(number))
+    //         totals.push(number)
+            
+    //         ls.setItem('subtotal',JSON.stringify(totals))
+    //     }
+       
+        
+    // })
+
+    addToCartBtn.addEventListener('click', (e) => {
+        if (!ls.cart) {
+            
+           
+            
+            totals.push(products[i])
+            ls.setItem('cart', JSON.stringify(totals))
         }
 
         else {
-            totalToJSON = ls.getItem('subtotal')
+            totalToJSON = ls.getItem('cart')
             totals = JSON.parse(totalToJSON)
             console.log(totals)
-            let number = Number(e.target.dataset.price)
-            console.log(typeof(number))
-            totals.push(number)
             
-            ls.setItem('subtotal',JSON.stringify(totals))
+            totals.push(products[i])
+            
+            ls.setItem('cart',JSON.stringify(totals))
         }
        
         
