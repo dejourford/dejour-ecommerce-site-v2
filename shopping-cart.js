@@ -4,6 +4,7 @@ const invoiceNode = document.querySelector('.invoice')
 const subtotal = document.querySelector('#subtotal-price')
 const tax = document.querySelector('#tax-price')
 const total = document.querySelector('#total-price')
+const modalTotal = document.querySelector('#modal-price')
 
 
 // // NAV CLOSE
@@ -22,6 +23,20 @@ openMenu = () => {
     mobileNav.classList.add('open')
     
    
+}
+
+
+// MODAL OPEN AND CLOSE
+const checkoutModal = document.querySelector('#checkoutModal')
+const modalCheckOutBtn = document.querySelector('.checkout-btn')
+const showModal = () => {
+    checkoutModal.classList.toggle('show')
+    checkoutModal.classList.toggle('hide')
+}
+
+const hideModal = () => {
+    checkoutModal.classList.toggle('show')
+    checkoutModal.classList.toggle('hide')
 }
 
 
@@ -75,7 +90,8 @@ for (let i = 0; i < storedItemsToParse.length; i++){
     let totalAmount = Number(taxAmount + sumToFixed).toFixed(2)
     
     total.textContent = '$' + totalAmount
-    
+    modalTotal.textContent = 'The total of ' + '$' + totalAmount 
+    + ' will be charged to your card.'
     
 }
 
