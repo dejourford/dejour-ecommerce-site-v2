@@ -50,6 +50,9 @@
         </header>
 
 
+        
+
+
         <main>
             <article class="shopping-cart">
                 <h1>Shopping Cart</h1>
@@ -87,17 +90,37 @@
                     </div>
 
                     <div class="checkout-button-group">
-                        <a href=""><button class="checkout-btn">Checkout</button></a>
+                        <button class="checkout-btn" onclick="showModal()">Checkout</button>
                        <a href="tops.html"><p class="continue-shopping-text">or <span class="emphasis">Continue Shopping&RightArrow;</span> </p></a> 
                     </div>
                     
                 </section>
 
             </article>
+
+            <article id="checkoutModal" class="hide">
+                <i id="modalXMark" class="fa-solid fa-xmark" onclick="hideModal()"></i>
+                <section class="topModal">
+                    <h2>checkout</h2>
+                    <p class="modalText">
+                    To checkout please enter a valid E-mail.
+                    </p>
+                    <input id="modalInput" type="text" placeholder="Example@yahoo.com">
+                </section>
+            
+                <section class="bottomModal">
+                    <span class="group-price" id="modal-price"></span>
+                    <a href=""><button class="checkout-btn">Checkout</button></a>
+                </section>
+                
+                
+            </article>
+
+            
         </main>
 
-
-
+        
+        
 
 
 
