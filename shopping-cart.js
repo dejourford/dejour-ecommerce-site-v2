@@ -1,7 +1,10 @@
 ls = localStorage
 const shoppingCart = document.querySelector('.shopping-cart')
 const invoiceNode = document.querySelector('.invoice')
-const subtotalPrice = document.querySelector('#subtotal-price')
+const subtotal = document.querySelector('#subtotal-price')
+const tax = document.querySelector('#tax-price')
+const total = document.querySelector('#total-price')
+
 
 // // NAV CLOSE
 const closeBtn = document.querySelector('.fa-xmark')
@@ -51,10 +54,7 @@ function createRow(cartItem) {
 }
 
 
-function addToCartTotal(cartItem) {
-    let sum = 0
 
-}
 
 
 let sum = 0
@@ -63,13 +63,19 @@ let storedItemsToParse = JSON.parse(storedItems)
 for (let i = 0; i < storedItemsToParse.length; i++){
      const row = createRow(storedItemsToParse[i])
      shoppingCart.insertBefore(row, invoiceNode)
-    
+     
      
      sum += Number(storedItemsToParse[i].price.slice(1))
-     let sumToFixed = sum.toFixed(2)
+     let sumToFixed = Number(sum.toFixed(2))
      console.log(sumToFixed)
+     
+    subtotal.textContent = '$' + sumToFixed
+    let taxAmount = Number((sumToFixed * 0.0625).toFixed(2))
+    tax.textContent = '$' + taxAmount
+    let totalAmount = Number(taxAmount + sumToFixed)
     
-
+    total.textContent = '$' + totalAmount
+    
     
 }
 
