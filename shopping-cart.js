@@ -72,7 +72,7 @@ for (let i = 0; i < storedItemsToParse.length; i++){
     subtotal.textContent = '$' + sumToFixed
     let taxAmount = Number((sumToFixed * 0.0625).toFixed(2))
     tax.textContent = '$' + taxAmount
-    let totalAmount = Number(taxAmount + sumToFixed)
+    let totalAmount = Number(taxAmount + sumToFixed).toFixed(2)
     
     total.textContent = '$' + totalAmount
     

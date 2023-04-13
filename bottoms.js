@@ -1,8 +1,11 @@
+// GLOBAL VARIABLES
+const ls = localStorage
+let totals = []
+
 // // NAV CLOSE
 const closeBtn = document.querySelector('.fa-xmark')
 const mobileNav =  document.querySelector('.mobile-nav')
 const hamburgerMenu = document.querySelector('.fa-bars-staggered')
-
 closeMenu = () => {
     mobileNav.classList.remove('open')
     mobileNav.classList.add('close')
@@ -15,6 +18,7 @@ openMenu = () => {
     
    
 }
+
 
 // PRODUCTS 
 const products = [ 
@@ -173,7 +177,6 @@ const products = [
 
 
 
-
 console.log(products.length)
 
 
@@ -182,7 +185,7 @@ console.log(products.length)
 for (let i = 0; i < products.length; i++) {
     
     // create function for making cards
-    createNewCard = () => {
+    const createNewCard = () => {
     
     // create a new card each time
     const newCard = document.createElement('div')
@@ -224,8 +227,10 @@ for (let i = 0; i < products.length; i++) {
     addToCartBtn.classList.add('add-to-cart-btn')
     addToCartBtn.textContent = 'Add To Cart'
 
-         // add data tag to add to cart button
+    // add data tag to add to cart button
+    // and get price with removed $ sign
     addToCartBtn.dataset.price = parseFloat(products[i].price.slice(1))
+    
 
     // append all elements to card 
     // and card to DOM
@@ -235,13 +240,54 @@ for (let i = 0; i < products.length; i++) {
     newCardFooter.append(cardTitle, cardPrice, addToCartBtn)
     tops.append(newCard)
 
+    // create click listener to add prices to 
+    // local storage
+    // addToCartBtn.addEventListener('click', (e) => {
+    //     if (!ls.subtotal) {
+            
+           
+    //         let number = Number(e.target.dataset.price)
+    //         totals.push(number)
+    //         ls.setItem('subtotal', JSON.stringify(totals))
+    //     }
 
-    // ADDING ITEMS TO CART
-    // AND GETTING PRICE OF ITEMS
+    //     else {
+    //         totalToJSON = ls.getItem('subtotal')
+    //         totals = JSON.parse(totalToJSON)
+    //         console.log(totals)
+    //         let number = Number(e.target.dataset.price)
+    //         console.log(typeof(number))
+    //         totals.push(number)
+            
+    //         ls.setItem('subtotal',JSON.stringify(totals))
+    //     }
+       
+        
+    // })
+
     addToCartBtn.addEventListener('click', (e) => {
-    let number = e.target.dataset.price
-    console.log(number)
-     })
+        if (!ls.cart) {
+            
+           
+            
+            totals.push(products[i])
+            ls.setItem('cart', JSON.stringify(totals))
+        }
+
+        else {
+            totalToJSON = ls.getItem('cart')
+            totals = JSON.parse(totalToJSON)
+            console.log(totals)
+            
+            totals.push(products[i])
+            
+            ls.setItem('cart',JSON.stringify(totals))
+        }
+       
+        
+    })
+
+   
 
 
 }
