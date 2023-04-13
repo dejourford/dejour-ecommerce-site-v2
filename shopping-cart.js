@@ -28,7 +28,7 @@ openMenu = () => {
 
 // MODAL OPEN AND CLOSE
 const checkoutModal = document.querySelector('#checkoutModal')
-const modalCheckOutBtn = document.querySelector('.checkout-btn')
+
 const showModal = () => {
     checkoutModal.classList.toggle('show')
     checkoutModal.classList.toggle('hide')
@@ -39,7 +39,15 @@ const hideModal = () => {
     checkoutModal.classList.toggle('hide')
 }
 
-
+// GENERATE ALERT AFTER CHECKOUT
+const modalCheckOutBtn = document.querySelector('#modalCheckoutBtn')
+modalCheckOutBtn.addEventListener('click', () => {
+    
+    alert('Your order has been placed!')
+    hideModal()
+    localStorage.clear()
+    window.location.href = "index.html";
+})
 
 function createRow(cartItem) {
     const cartRow = document.createElement('section')
