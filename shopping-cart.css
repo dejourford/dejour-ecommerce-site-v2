@@ -319,6 +319,7 @@ h2 {
 #modalInput {
     min-width: 80%;
     padding: 0.5em;
+    font-size: 16px;
 }
 
 .bottomModal {
